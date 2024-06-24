@@ -1,0 +1,173 @@
+/* Basic Styles */
+body {
+  
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    h1{
+        font-size: 50px;
+        font-style: italic;
+    }
+
+ .marquee {
+            font-size: 1.5em;
+            font-family: Arial, sans-serif;
+            background-color:rgb(216, 154, 109);
+            color: white;
+            padding: 10px 0;
+        }
+
+        .text1 { 
+          color: black;
+          font-style:italic;
+}
+        .text2 { 
+          color: black; 
+          font-style:italic;
+}
+        .text3 {
+          color: black; 
+          font-style:italic;
+}
+        .text4 {
+          color: black;
+          font-style:italic;
+}
+
+header {
+    background-color: whitesmoke;
+    color:black;
+    text-align: center;
+    padding: 2px;
+    
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 50px;
+  
+}
+
+nav ul li a {
+  
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: black;
+  
+  
+  
+}
+.icon img{
+    padding: 30px;
+}
+.tag h1{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    font-style:italic ;
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    content: "";
+   
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+    position: absolute;
+  
+}
+
+.hamburger::before {
+    transform: translateY(-10px);
+}
+
+.hamburger::after {
+    transform: translateY(10px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+       
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    nav ul.show {
+        display: flex;
+      
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+      
+    }
+  
+  
+}
+
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 4px; /* Adds space between each icon */
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
